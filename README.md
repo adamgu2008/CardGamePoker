@@ -26,6 +26,6 @@ Welcome to...
 
 ### Utilizes inheritance, sorting, searching, recursion, and more!
 
-To play, run the Main class's main method, and follow the instructions with your input.
+**To play, run the Main class's main method, and follow the instructions with your input. **
 
 In multiplayer, pass the computer around to your opponents after your turn, the screen and hands will be hidden until they are ready for their turn.

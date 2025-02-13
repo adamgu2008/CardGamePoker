@@ -20,9 +20,10 @@ Welcome to...
 - 1 Pair
 - High Card
 
-2 games included!
-  -Multiplayer
-  -Player vs. bots
+3 games included!
+- Multiplayer
+- Player vs. bots
+- Classic Edition ;)
 
 ### Utilizes inheritance, sorting, searching, recursion, and more!
 

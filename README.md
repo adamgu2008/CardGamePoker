@@ -6,7 +6,7 @@ Welcome to...
 ██╔═══╝░██║░░██║██╔═██╗░██╔══╝░░██╔══██╗
 ██║░░░░░╚█████╔╝██║░╚██╗███████╗██║░░██║
 ╚═╝░░░░░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-		*no gambling*	:(
+		\n*no gambling*	:(
 ## Hands (in order): 
 - Royal Flush (A,K,Q,J,10, same suit)
 - Straight Flush (same suit, consecutive order rank)

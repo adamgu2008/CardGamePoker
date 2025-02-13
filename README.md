@@ -7,7 +7,7 @@ Welcome to...
 ██║░░░░░╚█████╔╝██║░╚██╗███████╗██║░░██║
 ╚═╝░░░░░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 		*no gambling*	:(
-Hands (in order): 
+## Hands (in order): 
 Royal Flush (A,K,Q,J,10, same suit)
 Straight Flush (same suit, consecutive order rank)
 4 of a Kind

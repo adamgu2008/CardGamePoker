@@ -23,7 +23,7 @@ Welcome to...
 3 games included!
 - Multiplayer
 - Player vs. bots
-- Classic Edition ;)
+- Classic Edition (coming soon)
 
 ### Utilizes inheritance, sorting, searching, recursion, and more!
 

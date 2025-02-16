@@ -21,8 +21,8 @@ Welcome to...
 - High Card
 
 3 games included!
-- Multiplayer
-- Player vs. bots
+- Multiplayer (for school)
+- Player vs. bots (for school)
 - Classic Edition (coming soon)
 
 ### Utilizes inheritance, sorting, searching, recursion, and more!

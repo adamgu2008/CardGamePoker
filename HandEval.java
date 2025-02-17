@@ -1,6 +1,8 @@
 import java.util.*;
 public class HandEval {
-
+    
+    //@param hand ArrayList of cards to evaluate
+    //@return int value of the hand
     public int evaluate(ArrayList<Card> hand) {
         HashMap<String, Integer> rankCount = countRanks(hand);      //HashMap format: <Key, Value>, like python dictionary sort of
         HashMap<String, Integer> suitCount = countSuits(hand);
@@ -19,7 +21,7 @@ public class HandEval {
 
         return 1;
     }
-    
+    //helper functions
     private static HashMap<String, Integer> countRanks(ArrayList<Card> hand){   //counts how many of each rank are in a deck
         HashMap<String, Integer> rankCount = new HashMap<>();
         for (Card card : hand){
@@ -88,7 +90,16 @@ public class HandEval {
         for(String rank : rankCount.keySet()){      //for each rank
             rankVals.add(rankToVal(rank));  //add the value of that rank to list rankVals
         }
-        Collections.sort(rankVals);     //quick sort of rank vals, I could have used selection or insertion sort
+        //insertion sort
+        for(int i = 1; i < rankVals.size(); i++){
+            int key = rankVals.get(i);
+            int j = i - 1;
+            while(j >= 0 && rankVals.get(j) < key){
+                rankVals.set(j+1, rankVals.get(j));
+                j--;
+            }
+            rankVals.set(j+1, key);
+        }
         return rankVals;
     }
     private static int rankToVal(String rank){

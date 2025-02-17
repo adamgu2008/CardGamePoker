@@ -37,7 +37,18 @@ public class HumanPlayer extends Player{
         }
         
         ArrayList<Card> discCards = new ArrayList<>();
-        Collections.sort(indecesToDisc);     //quick sort to avoid shifting errors in removal
+        //selection sort of indeces to discard to avoid shifting errors
+        for(int i = 0; i < indecesToDisc.size(); i++){
+            int minIdx = i;
+            for(int j = i+1; j < indecesToDisc.size(); j++){
+                if(indecesToDisc.get(j) < indecesToDisc.get(minIdx)){
+                    minIdx = j;
+                }
+            }
+            int temp = indecesToDisc.get(i);
+            indecesToDisc.set(i, indecesToDisc.get(minIdx));
+            indecesToDisc.set(minIdx, temp);
+        }
 
         for(int i = indecesToDisc.size()-1; i >= 0; i--){   //reverse loop to sort in descending order for discarding the cards
             discCards.add(hand.get(indecesToDisc.get(i)));

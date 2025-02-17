@@ -7,6 +7,7 @@ public class BotPlayer extends Player{
     //This is where stuff gets complicated: bot logic
     
     @Override
+    //@param deck deck of cards
     public void discNDraw(Deck deck) {
         System.out.println("Player "+name+" is thinking...");
         //hashmap format mentioned in HandEval Class
@@ -25,7 +26,18 @@ public class BotPlayer extends Player{
         else
             idxsToDisc = discLowCards();
 
-        Collections.sort(idxsToDisc);   //sort to avoid shift errors
+        //selection sort
+        for(int i = 0; i < idxsToDisc.size(); i++){
+            int minIdx = i;
+            for(int j = i+1; j < idxsToDisc.size(); j++){
+                if(idxsToDisc.get(j) < idxsToDisc.get(minIdx)){
+                    minIdx = j;
+                }
+            }
+            int temp = idxsToDisc.get(i);
+            idxsToDisc.set(i, idxsToDisc.get(minIdx));
+            idxsToDisc.set(minIdx, temp);
+        }
 
         for(int i = idxsToDisc.size()-1; i >= 0; i--){      //remove cards
             hand.remove((int)idxsToDisc.get(i));
